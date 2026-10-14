@@ -444,7 +444,7 @@ public class LsFormatter {
 	}
 
 	public static void main2(final String[] args) {
-		final FilenameFilter fileNameFilter = (_, name) -> {
+		final FilenameFilter fileNameFilter = (dummy, name) -> {
 			final int nameLength = name == null ? 0 : name.length();
 			if ((nameLength < 4) || (name.lastIndexOf('.') != nameLength - 4))
 				return false;
